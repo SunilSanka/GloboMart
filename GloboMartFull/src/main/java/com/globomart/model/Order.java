@@ -31,7 +31,6 @@ public class Order {
 	
 	private Long orderId;
 	private Date orderDate;
-
 	private String totalPrice;
 	private String status;
 	private String paymentMode;

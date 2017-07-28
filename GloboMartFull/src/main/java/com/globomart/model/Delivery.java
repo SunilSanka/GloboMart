@@ -24,16 +24,16 @@ public class Delivery {
 	@JoinColumn(name="DELIVERY_ID")
 	private List<Order> orders;
 	
-	private Date DeliveryDate;
-	private String Address;
+	private Date deliveryDate;
+	private String address;
 	private String deliveryStatus;
 	private String deliveryType;
 	
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public Date getDeliveryDate() {
-		return DeliveryDate;
+		return deliveryDate;
 	}
 	public String getDeliveryStatus() {
 		return deliveryStatus;
@@ -48,10 +48,10 @@ public class Delivery {
 		return orders;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	public void setDeliveryDate(Date deliveryDate) {
-		DeliveryDate = deliveryDate;
+		this.deliveryDate = deliveryDate;
 	}
 	public void setDeliveryStatus(String deliveryStatus) {
 		this.deliveryStatus = deliveryStatus;
